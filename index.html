@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AVICUVE — Asociación de Víctimas del Cuaymismo Venezolano</title>
-  <meta name="description" content="AVICUVE es la primera asociación venezolana dedicada a apoyar a las víctimas del cuaymismo. Desde 2003, ayudando a hombres venezolanos a recuperar su voz y su dignidad." />
+  <meta name="description" content="AVICUVE es la primera asociación venezolana dedicada a apoyar a las víctimas del cuaymismo. Desde 2014, ayudando a hombres venezolanos a recuperar su voz y su dignidad." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -27,7 +27,7 @@
       --font-heading: 'Nunito', sans-serif;
       --font-body: 'Inter', sans-serif;
 
-      --nav-height: 70px;
+      --nav-height: 80px;
       --radius: 12px;
       --radius-sm: 8px;
       --shadow: 0 4px 20px rgba(107, 91, 149, 0.12);
@@ -119,9 +119,15 @@
       padding: 0 clamp(20px, 4vw, 40px);
     }
 
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
     .nav-logo {
       font-family: var(--font-heading);
-      font-size: 22px;
+      font-size: 30px;
       font-weight: 900;
       color: var(--color-primary);
       letter-spacing: -0.5px;
@@ -129,6 +135,15 @@
 
     .nav-logo span {
       color: var(--color-accent);
+    }
+
+    .nav-tagline {
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      letter-spacing: 0.3px;
+      margin-top: 2px;
     }
 
     .nav-links {
@@ -941,7 +956,10 @@
   <!-- ─── NAVIGATION ─── -->
   <nav id="nav" role="navigation" aria-label="Navegación principal">
     <div class="nav-inner">
-      <a href="#inicio" class="nav-logo">AVI<span>CUVE</span></a>
+      <a href="#inicio" class="nav-brand">
+        <span class="nav-logo">AVI<span>CUVE</span></span>
+        <span class="nav-tagline">Porque tú también tienes derecho a opinar.</span>
+      </a>
       <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
         <span></span>
         <span></span>
@@ -960,10 +978,10 @@
   <!-- ─── HERO ─── -->
   <section id="inicio" aria-labelledby="hero-headline">
     <div class="hero-content">
-      <div class="hero-badge">Asociación Oficial · Fundada 2003</div>
+      <div class="hero-badge">Asociación Oficial · Fundada 2014</div>
       <h1 class="hero-headline" id="hero-headline">No Estás Solo</h1>
       <p class="hero-subline">
-        AVICUVE es la primera asociación venezolana dedicada a apoyar a las víctimas del cuaymismo. Desde 2003, hemos ayudado a miles de hombres a recuperar su voz, su control remoto, y su dignidad.
+        AVICUVE es la primera asociación venezolana dedicada a apoyar a las víctimas del cuaymismo. Desde 2014, hemos ayudado a miles de hombres a recuperar su voz, su control remoto, y su dignidad.
       </p>
       <a href="#unete" class="btn-primary">
         Únete a Nosotros
@@ -1262,7 +1280,7 @@
         <div class="stat-card">
           <span class="stat-number" aria-label="más de 15000">+15,000</span>
           <div class="stat-divider" aria-hidden="true"></div>
-          <p class="stat-desc">hombres han recuperado su voz gracias a AVICUVE desde 2003</p>
+          <p class="stat-desc">hombres han recuperado su voz gracias a AVICUVE desde 2014</p>
         </div>
 
         <div class="stat-card">
@@ -1367,7 +1385,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span>© 2003–2026 AVICUVE. Todos los derechos reservados. Algunos derechos en el hogar aún en disputa.</span>
+        <span>© 2014–2026 AVICUVE. Todos los derechos reservados. Algunos derechos en el hogar aún en disputa.</span>
         <span>Hecho con dignidad y mucho esfuerzo.</span>
       </div>
     </div>
